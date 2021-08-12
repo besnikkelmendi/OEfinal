@@ -39,6 +39,7 @@ import {PersistGate} from "redux-persist/lib/integration/react";
 import OvenModel from "components/WebCam/OvenModel";
 
 ReactDOM.render(
+  <React.StrictMode>
   <Provider store = {store}>
     <PersistGate loading={null} persistor={persister}>
     <BrowserRouter>
@@ -81,6 +82,7 @@ ReactDOM.render(
       </Switch>
     </BrowserRouter>
     </PersistGate>
-  </Provider>,
+  </Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
