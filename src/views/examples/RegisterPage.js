@@ -136,7 +136,7 @@ export default function RegisterPage() {
     //   headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' }
     // };
 
-    const result = await axios.post('http://localhost:8080/api/v1/image', formData)
+    const result = await axios.post('https://oeserver.herokuapp.com' +'/api/v1/image', formData)
     console.log("Image: ", result.data);
   }
 

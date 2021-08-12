@@ -66,7 +66,7 @@ function PageHeader(props) {
   useEffect(() => {
     fetchKeys();
     //startTimer();
-    // axios.get('http://localhost:8080/api/v1/images')
+    // axios.get('https://oeserver.herokuapp.com' +'/api/v1/images')
     // .then(res => {
     //   console.log(res)
     //   setKeys(res.data.data)
@@ -162,17 +162,17 @@ function PageHeader(props) {
           <UncontrolledCarousel className="landing-carousel"
             items={[
               {
-                src: 'http://localhost:8080/api/v1/image/' + keys[0],
+                src: 'https://oeserver.herokuapp.com' +'/api/v1/image/' + keys[0],
                 altText: "Slide 1",
                 caption: 'Time: ' + moment(timestamps[0]).format('HH:mm:ss') + ' Date: ' + moment(timestamps[0]).format('DD-MM-YYYY'),
               },
               {
-                src: 'http://localhost:8080/api/v1/image/' + keys[1],
+                src: 'https://oeserver.herokuapp.com' +'/api/v1/image/' + keys[1],
                 altText: "Slide 2",
                 caption: 'Time: ' + moment(timestamps[1]).format('HH:mm:ss') + ' Date: ' + moment(timestamps[1]).format('DD-MM-YYYY'),
               },
               {
-                src: 'http://localhost:8080/api/v1/image/' + keys[2],
+                src: 'https://oeserver.herokuapp.com' +'/api/v1/image/' + keys[2],
                 altText: "Slide 3",
                 caption: 'Time: ' + moment(timestamps[2]).format('HH:mm:ss') + ' Date: ' + moment(timestamps[2]).format('DD-MM-YYYY'),
               },

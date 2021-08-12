@@ -77,7 +77,7 @@ function OvenPreview() {
           headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' }
         };
 
-        const result = await axios.post('http://localhost:8080/api/v1/oven-image', formData, config)
+        const result = await axios.post('https://oeserver.herokuapp.com' +'/api/v1/oven-image', formData, config)
 
         setImageSent(true);
         console.log("Image: ", result.data);

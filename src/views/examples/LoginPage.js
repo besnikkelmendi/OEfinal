@@ -218,7 +218,7 @@ export default function RegisterPage() {
       
 
       try{
-        let resp = await axios.post('http://localhost:8080/api/v1/client/login', data)
+        let resp = await axios.post('https://oeserver.herokuapp.com' +'/api/v1/client/login', data)
         console.log("Response: ", resp.data);
         resp = resp.data;
         if(resp.status == 1)

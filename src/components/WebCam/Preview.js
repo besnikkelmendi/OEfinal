@@ -79,7 +79,7 @@ function Preview() {
           headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' }
         };
 
-        const result = await axios.post('http://localhost:8080/api/v1/image', formData, config)
+        const result = await axios.post('https://oeserver.herokuapp.com' +'/api/v1/image', formData, config)
         console.log("Image: ", result.data);
     }
     const  dataURItoBlob = (dataURI) => {

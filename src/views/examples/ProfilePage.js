@@ -117,7 +117,7 @@ export default function ProfilePage() {
 
     
 
-    let resp =  await axios.get('http://localhost:8080/api/v1/client/me',config);
+    let resp =  await axios.get('https://oeserver.herokuapp.com' +'/api/v1/client/me',config);
     console.log("resp", resp);
     resp = resp.data;
     if(resp.status === 1)
@@ -131,7 +131,7 @@ export default function ProfilePage() {
       setCity(resp.city);
     }
 
-    // let keyResp =  await axios.get('http://localhost:8080/api/v1/images',config);
+    // let keyResp =  await axios.get('https://oeserver.herokuapp.com' +'/api/v1/images',config);
     
     // keyResp = keyResp.data;
     // console.log("resp", keyResp);

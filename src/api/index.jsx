@@ -3,7 +3,7 @@ import ApiImpl from './ApiImpl.jsx';
 
 
 //define url for the environment in use
-let api = new ApiImpl("http://localhost:8080");
+let api = new ApiImpl('https://oeserver.herokuapp.com');
 export default api;
 
 
